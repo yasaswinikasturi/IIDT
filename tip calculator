@@ -1,0 +1,13 @@
+def calculate_tip(bill_amount, service_quality, num_people):
+    tip_per_person = (bill_amount * (service_quality / 100)) / num_people
+    return tip_per_person
+bill1 = 500
+service_quality1 = 5
+num_people1 = 2
+tip1 = calculate_tip(bill1, service_quality1, num_people1)
+print(f"Test Case 1: Bill: {bill1}, Service Quality: {service_quality1}, Number of People: {num_people1}, Tip: {tip1}")
+bill2 = 1000
+service_quality2 = 3
+num_people2 = 5
+tip2 = calculate_tip(bill2, service_quality2, num_people2)
+print(f"Test Case 2: Bill: {bill2}, Service Quality: {service_quality2}, Number of People: {num_people2}, Tip: {tip2}")
